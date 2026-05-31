@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sapori d'Italia · Pizzería · Cala Millor</title>
+<meta name="description" content="Pizzería italiana en Cala Millor. Pasta casera, pizza al horno, tiramisú. Carrer Alosa 5." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="brand" aria-label="Sapori d'Italia Cala Millor">
+      <span class="brand-name">Sapori <em>d'Italia</em></span>
+      <span class="brand-sub">Cala Millor · Pizzería</span>
+    </a>
+
+    <nav class="nav-main" aria-label="Main navigation">
+      <a href="#empfehlungen" data-i18n="nav.menu">Recomendaciones</a>
+      <a href="#eindruecke" data-i18n="nav.gallery">Imágenes</a>
+      <a href="#historia" data-i18n="nav.story">Sobre nosotros</a>
+      <a href="#visitanos" data-i18n="nav.visit">Visita</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="lang-switch" role="group" aria-label="Idioma">
+        <button data-lang="es" class="lang-btn is-active">ES</button>
+        <button data-lang="en" class="lang-btn">EN</button>
+        <button data-lang="de" class="lang-btn">DE</button>
+      </div>
+      <a href="tel:+34871712574" class="btn btn-primary btn-reserve" data-i18n="cta.reserve">Reservar</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <p class="eyebrow" data-i18n="hero.eyebrow">Cala Millor · Mallorca</p>
+    <h1 class="hero-title" data-i18n="hero.title">Pasta casera<br/>y pizza al horno.</h1>
+    <p class="hero-sub" data-i18n="hero.sub">Pizzería italiana auténtica en el corazón de Cala Millor — pasta hecha a mano cada día, pizza al horno, tiramisú de verdad.</p>
+    <div class="hero-cta">
+      <a href="tel:+34871712574" class="btn btn-primary" data-i18n="hero.reserve">Reservar mesa</a>
+      <a href="tel:+34871712574" class="btn btn-ghost" data-i18n="hero.call">Llamar</a>
+    </div>
+    <div class="hero-meta">
+      <span data-i18n="hero.hours">Mediodía hasta 15:00  ·  Noche desde 18:30</span>
+      <span class="dot">·</span>
+      <span class="rating" data-i18n="hero.rating">★ 4,7 · 498 reseñas en Google</span>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="historia">
+  <div class="container story-grid">
+    <div class="story-text">
+      <p class="kicker" data-i18n="story.kicker">Sobre nosotros</p>
+      <h2 data-i18n="story.title">Italia en una calle de Cala Millor.</h2>
+      <p data-i18n="story.p1">Sapori d'Italia es una pizzería italiana auténtica — pizza recién salida del horno, pasta hecha en casa cada día y dulces clásicos como el tiramisú que tanto gusta a nuestros clientes.</p>
+      <p data-i18n="story.p2">Servicio al mediodía y por la noche, en un local acogedor con clientes habituales que vuelven año tras año. Para llevar, para quedarse — y siempre con un buen vino.</p>
+    </div>
+    <ul class="story-stats">
+      <li><strong>4,7 ★</strong><span data-i18n="story.statRating">498 reseñas Google</span></li>
+      <li><strong>10–20 €</strong><span data-i18n="story.statPrice">por persona</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="gallery" id="eindruecke">
+  <div class="container">
+    <header class="section-head">
+      <p class="kicker" data-i18n="gallery.kicker">Imágenes</p>
+      <h2 data-i18n="gallery.title">Así es Sapori.</h2>
+    </header>
+    <div class="gallery-grid">
+      <figure class="gallery-item gallery-item--big">
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Pizza" loading="lazy">
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Antipasti" loading="lazy">
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1567982047351-76b6f93e38ee?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Pasta" loading="lazy">
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Restaurante" loading="lazy">
+      </figure>
+    </div>
+    <p class="menu-note" data-i18n="gallery.note">Imágenes de muestra — las cambiamos por fotos reales de vuestros platos y del local a petición.</p>
+  </div>
+</section>
+
+<section class="menu" id="empfehlungen">
+  <div class="container">
+    <header class="section-head">
+      <p class="kicker" data-i18n="menu.kicker">Recomendaciones</p>
+      <h2 data-i18n="menu.title">Lo que más gusta a nuestros clientes.</h2>
+    </header>
+
+    <div class="rec-grid" id="recGrid"></div>
+
+    <p class="menu-note" data-i18n="menu.note">La carta completa y el vino del día están en el local.</p>
+  </div>
+</section>
+
+<section class="visit" id="visitanos">
+  <div class="container visit-grid">
+    <div class="visit-info">
+      <p class="kicker" data-i18n="visit.kicker">Visita</p>
+      <h2 data-i18n="visit.title">Carrer Alosa, 5 — Cala Millor</h2>
+
+      <div class="info-block">
+        <p class="info-label" data-i18n="visit.hoursLabel">Horario</p>
+        <p data-i18n="visit.hoursMain">Mediodía · hasta las 15:00</p>
+        <p data-i18n="visit.hoursEvening">Noche · desde las 18:30</p>
+        <p class="muted" data-i18n="visit.hoursNote">Horario actualizado en Google Maps</p>
+      </div>
+
+      <div class="info-block">
+        <p class="info-label" data-i18n="visit.addressLabel">Dirección</p>
+        <p>Carrer Alosa, 5<br/>07560 Cala Millor · Mallorca</p>
+      </div>
+
+      <div class="info-block">
+        <p class="info-label" data-i18n="visit.contactLabel">Contacto</p>
+        <p><a href="tel:+34871712574">+34 871 71 25 74</a></p>
+      </div>
+
+      <div class="visit-cta">
+        <a href="tel:+34871712574" class="btn btn-primary" data-i18n="visit.callCta">Llamar para reservar</a>
+      </div>
+    </div>
+
+    <div class="visit-map">
+      <iframe
+        src="https://www.google.com/maps?q=Sapori+d'Italia,+Carrer+Alosa+5,+Cala+Millor&z=16&output=embed"
+        title="Sapori d'Italia — Carrer Alosa 5"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <p class="footer-name">Sapori <em>d'Italia</em></p>
+      <p class="footer-tag" data-i18n="footer.tag">Pizzería · Pasta casera · Cala Millor</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <p class="footer-label" data-i18n="footer.findUs">Dónde estamos</p>
+        <p>Carrer Alosa, 5<br/>07560 Cala Millor</p>
+      </div>
+      <div>
+        <p class="footer-label" data-i18n="footer.hours">Horario</p>
+        <p data-i18n="footer.hoursLine">Mediodía hasta 15:00</p>
+        <p data-i18n="footer.hoursEvening">Noche desde 18:30</p>
+      </div>
+      <div>
+        <p class="footer-label" data-i18n="footer.contact">Contacto</p>
+        <p><a href="tel:+34871712574">+34 871 71 25 74</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Sapori d'Italia · Cala Millor</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
